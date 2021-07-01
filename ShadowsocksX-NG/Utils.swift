@@ -13,6 +13,10 @@ extension String {
         return NSLocalizedString(self, tableName: "Localizable", comment: "")
     }
     
+    func localized(withNumber:Int, withComment:String = "") -> String {
+        return String(format: NSLocalizedString(self, tableName: "Localizable", comment: withComment), withNumber)
+    }
+    
     func localized(withComment:String) -> String {
         return NSLocalizedString(self, tableName: "Localizable", comment: withComment)
     }

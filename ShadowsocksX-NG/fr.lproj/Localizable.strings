@@ -1,0 +1,83 @@
+
+
+
+
+
+
+/*
+ * SHARED STRINGS
+ */
+
+/*
+ * ./ShadowsocksX-NG/UserRulesController.swift
+ */
+
+"PAC has been updated by User Rules." = "PAC a été mis à jour par les règles d’utilisateur.";
+
+"It's failed to update PAC by User Rules." = "Échec de la mise à jour du PAC par les règles d’utilisateur.";
+
+/*
+ * ./ShadowsocksX-NG/AppDelegate.swift
+ */
+
+"Global Mode" = "Mode global";
+
+"Manual Mode" = "Mode manuel";
+
+"Auto Mode By PAC" = "Mode automatique par PAC";
+
+"Shadowsocks: On" = "Shadowsocks : activé";
+
+"Shadowsocks: Off" = "Shadowsocks: désactivé";
+
+"Export Command Copied." = "Commande d’export copiée";
+
+"Save Diagnosis to File" = "Enregistrer les diagnostics dans un fichier";
+
+"Servers" = "Serveurs";
+
+"Turn Shadowsocks Off" = "Désactiver Shadowsocks";
+
+"Turn Shadowsocks On" = "Activer Shadowsocks";
+
+"By scan QR Code" = "En scannant le QR Code";
+
+"By handle SS URL" = "En gérant l’URL SS";
+
+"By import from pasteboard" = "En important depuis le presse-papiers";
+
+"Not found valid QRCode of shadowsocks profile" = "Code QR valide du profil shadowsocks introuvable";
+
+"Not found valid URL of shadowsocks profile" = "URL valide du profil shadowsocks introuvable";
+
+/*
+ * ./ShadowsocksX-NG/ShareServerProfilesWindowController.swift
+ */
+
+"Save QRCode As File" = "Enregistrer le code QR en tant que fichier ";
+
+"Save All Server URLs To File" = "Enregistrer toutes les URL des serveurs dans un fichier";
+
+/*
+ * ./ShadowsocksX-NG/PACUtils.swift
+ */
+
+"PAC has been updated by latest GFW List." = "PAC a été mis à jour par la dernière GFW List.";
+
+"Failed to download latest GFW List." = "Échec du téléchargement de la dernière GFW List.";
+
+/*
+ * ./ShadowsocksX-NG/ImportWindowController.swift
+ */
+
+"Not found valid shadowsocks server urls." = "URL des serveurs shadowsocks non trouvées.";
+
+/*
+ * ./ShadowsocksX-NG/PreferencesWindowController.swift
+ */
+
+"New Server" = "Nouveau serveur";
+
+"Visible" = "Visible";
+
+"Hidden" = "Caché";

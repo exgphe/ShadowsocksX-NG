@@ -1,0 +1,123 @@
+
+/* Class = "NSTextFieldCell"; title = "Seconds"; ObjectID = "4R2-UO-qs7"; */
+"4R2-UO-qs7.title" = "Secondes";
+
+/* Class = "NSTextFieldCell"; title = "HTTP Proxy Listen Address:"; ObjectID = "6W4-TY-Bw5"; */
+"6W4-TY-Bw5.title" = "Adresse d’écoute du proxy HTTP :";
+
+/* Class = "NSButtonCell"; title = "Check"; ObjectID = "8Ku-VV-ZaY"; */
+"8Ku-VV-ZaY.title" = "Check";
+
+/* Class = "NSTextFieldCell"; title = "Local Socks5 Listen Port:"; ObjectID = "8fk-fw-Tsx"; */
+"8fk-fw-Tsx.title" = "Port d’écoute local Socks5 :";
+
+/* Class = "NSTextFieldCell"; title = "Toggle Shadowsocks On/Off:"; ObjectID = "95S-ma-8Q7"; */
+"95S-ma-8Q7.title" = "Activer/Désactiver Shadowsocks :";
+
+/* Class = "NSButtonCell"; title = "Reset"; ObjectID = "Afd-bH-wOk"; */
+"Afd-bH-wOk.title" = "Réinitialiser";
+
+/* Class = "NSTextFieldCell"; title = "Switch proxy mode:"; ObjectID = "BaL-cn-m8v"; */
+"BaL-cn-m8v.title" = "Changer de mode proxy :";
+
+/* Class = "NSToolbarItem"; label = "Interfaces"; ObjectID = "Bdm-pj-Ckd"; */
+"Bdm-pj-Ckd.label" = "Interfaces";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Interfaces"; ObjectID = "Bdm-pj-Ckd"; */
+"Bdm-pj-Ckd.paletteLabel" = "Interfaces";
+
+/* Class = "NSToolbarItem"; label = "HTTP"; ObjectID = "D0F-6S-Ztu"; */
+"D0F-6S-Ztu.label" = "HTTP";
+
+/* Class = "NSToolbarItem"; paletteLabel = "HTTP"; ObjectID = "D0F-6S-Ztu"; */
+"D0F-6S-Ztu.paletteLabel" = "HTTP";
+
+/* Class = "NSWindow"; title = "Preferences"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "Préférences";
+
+/* Class = "NSTabViewItem"; label = "HTTP"; ObjectID = "F5Q-Ce-JJN"; */
+"F5Q-Ce-JJN.label" = "HTTP";
+
+/* Class = "NSButtonCell"; title = "Manual"; ObjectID = "HEX-K9-W2f"; */
+"HEX-K9-W2f.title" = "Manuel";
+
+/* Class = "NSTextFieldCell"; title = "Local PAC Server Listen Port:"; ObjectID = "IMQ-c4-gmc"; */
+"IMQ-c4-gmc.title" = "Port d’écoute du serveur PAC local :";
+
+/* Class = "NSTextFieldCell"; title = "The mode will be switched to by the shortcut:"; ObjectID = "JZn-Si-mym"; */
+"JZn-Si-mym.title" = "Le mode basculé par le raccourci :";
+
+/* Class = "NSButtonCell"; title = "PAC"; ObjectID = "LtL-Fu-qXy"; */
+"LtL-Fu-qXy.title" = "PAC";
+
+/* Class = "NSToolbarItem"; label = "General"; ObjectID = "Mp8-cF-kQ7"; */
+"Mp8-cF-kQ7.label" = "Général";
+
+/* Class = "NSToolbarItem"; paletteLabel = "General"; ObjectID = "Mp8-cF-kQ7"; */
+"Mp8-cF-kQ7.paletteLabel" = "Général";
+
+/* Class = "NSButtonCell"; title = "Enable UDP Relay"; ObjectID = "R3v-iN-zu8"; */
+"R3v-iN-zu8.title" = "Activer le relais UDP";
+
+/* Class = "NSTextFieldCell"; title = "HTTP Proxy Listen Port:"; ObjectID = "Ww9-j9-WYR"; */
+"Ww9-j9-WYR.title" = "Port d’écoute du proxy HTTP :";
+
+/* Class = "NSButtonCell"; title = "Launch At Login"; ObjectID = "XJx-j4-bBr"; */
+"XJx-j4-bBr.title" = "Lancer à l’ouverture de session";
+
+/* Class = "NSButtonCell"; title = "Global"; ObjectID = "aAp-dI-e5Q"; */
+"aAp-dI-e5Q.title" = "Global";
+
+/* Class = "NSButtonCell"; title = "Auto Configure"; ObjectID = "bu3-s5-bYM"; */
+"bu3-s5-bYM.title" = "Configuration automatique";
+
+/* Class = "NSButtonCell"; title = "Enable Verbose Mode"; ObjectID = "cIS-Wb-Rzg"; */
+"cIS-Wb-Rzg.title" = "Activer le mode détaillé";
+
+/* Class = "NSTabViewItem"; label = "Interfaces"; ObjectID = "eDR-CZ-P4p"; */
+"eDR-CZ-P4p.label" = "Interfaces";
+
+/* Class = "NSTextFieldCell"; title = "Local Socks5 Listen Address:"; ObjectID = "jkc-e3-4O0"; */
+"jkc-e3-4O0.title" = "Adresse d’écoute locale de Socks5 :";
+
+/* Class = "NSButtonCell"; title = "HTTP Proxy Enable"; ObjectID = "jr6-x7-WJD"; */
+"jr6-x7-WJD.title" = "Proxy HTTP activé";
+
+/* Class = "NSTextFieldCell"; title = "External PAC URL:"; ObjectID = "kBe-eq-uZL"; */
+"kBe-eq-uZL.title" = "URL PAC externe :";
+
+/* Class = "NSTabViewItem"; label = "Advance"; ObjectID = "ksf-9b-qoz"; */
+"ksf-9b-qoz.label" = "Avancé";
+
+/* Class = "NSToolbarItem"; label = "Advanced"; ObjectID = "kuN-wm-bl5"; */
+"kuN-wm-bl5.label" = "Avancé";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Advanced"; ObjectID = "kuN-wm-bl5"; */
+"kuN-wm-bl5.paletteLabel" = "Avancé";
+
+/* Class = "NSButtonCell"; title = "Set HTTP proxy to system proxy configure in global mode"; ObjectID = "m8L-D6-ye3"; */
+"m8L-D6-ye3.title" = "Définir le proxy HTTP sur le proxy système configuré en mode global";
+
+/* Class = "NSButtonCell"; title = "Reset Preferences"; ObjectID = "mQC-AR-HXC"; */
+"mQC-AR-HXC.title" = "Réinitialiser les préférences";
+
+/* Class = "NSButtonCell"; title = "Local PAC Server Bind To Localhost"; ObjectID = "oCf-id-PAx"; */
+"oCf-id-PAx.title" = "Lier le serveur PAC local à Localhost";
+
+/* Class = "NSTextFieldCell"; title = "Timeout:"; ObjectID = "sQ9-bj-V0I"; */
+"sQ9-bj-V0I.title" = "Timeout :";
+
+/* Class = "NSTextFieldCell"; title = "Which network interfaces proxy setting would be controlled by ShadowsocksX-NG"; ObjectID = "t0I-6n-gnu"; */
+"t0I-6n-gnu.title" = "Quels paramètres de proxy d’interfaces réseau seraient contrôlés par ShadowsocksX-NG";
+
+/* Class = "NSTextFieldCell"; title = "Bypass proxy settings for these Hosts & Domains:"; ObjectID = "v4F-L4-s8U"; */
+"v4F-L4-s8U.title" = "Ignorer les paramètres de proxy pour ces hôtes et domaines :";
+
+/* Class = "NSTextFieldCell"; title = "GFW List URL:"; ObjectID = "v7a-wf-aEm"; */
+"v7a-wf-aEm.title" = "URL de la GFW List :";
+
+/* Class = "NSButtonCell"; title = "External PAC"; ObjectID = "wQp-fv-2mb"; */
+"wQp-fv-2mb.title" = "PAC externe";
+
+/* Class = "NSTabViewItem"; label = "General"; ObjectID = "xbG-eW-Prj"; */
+"xbG-eW-Prj.label" = "Général";

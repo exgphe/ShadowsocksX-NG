@@ -88,8 +88,8 @@ func diagnose() -> String {
     strs.append("$ ifconfig\n")
     strs.append(shell("ifconfig"))
     strs.append("-----------------------------------\n")
-    strs.append("$ launchctl list | grep com.qiuyuzhou.\n")
-    strs.append(shell("bash", "-c", "launchctl list | grep com.qiuyuzhou."))
+    strs.append("$ launchctl list | grep com.exgphe.\n")
+    strs.append(shell("bash", "-c", "launchctl list | grep com.exgphe."))
     strs.append("-----------------------------------\n")
     
     let output = strs.joined()

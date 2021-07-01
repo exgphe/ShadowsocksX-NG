@@ -66,7 +66,7 @@
 
 - (void) setLaunchAtLogin: (BOOL) enabled
 {
-    static NSString* bundleID = @"com.qiuyuzhou.ShadowsocksX-NG.LaunchHelper";
+    static NSString* bundleID = @"com.exgphe.ShadowsocksX-NG.LaunchHelper";
     
     if (SMLoginItemSetEnabled(
                               (__bridge CFStringRef)bundleID

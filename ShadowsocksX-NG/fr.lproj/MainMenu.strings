@@ -1,0 +1,69 @@
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "4CS-qD-zW5"; */
+"4CS-qD-zW5.title" = "Préférences…";
+
+/* Class = "NSMenuItem"; title = "Manual Mode"; ObjectID = "8PR-gs-c5N"; */
+"8PR-gs-c5N.title" = "Mode manuel";
+
+/* Class = "NSMenu"; title = "Servers"; ObjectID = "9Y1-db-3HK"; */
+"9Y1-db-3HK.title" = "Serveurs";
+
+/* Class = "NSMenuItem"; title = "Turn ShadowsocksX On"; ObjectID = "GSu-Tf-StS"; */
+"GSu-Tf-StS.title" = "Activer ShadowsocksX";
+
+/* Class = "NSMenu"; title = "ShadowsocksX-NG"; ObjectID = "Hob-KD-bx9"; */
+"Hob-KD-bx9.title" = "ShadowsocksX-NG";
+
+/* Class = "NSMenuItem"; title = "Show Logs…"; ObjectID = "Jfy-sf-Fhl"; */
+"Jfy-sf-Fhl.title" = "Afficher les journaux…";
+
+/* Class = "NSMenuItem"; title = "About"; ObjectID = "LgB-6g-Gba"; */
+"LgB-6g-Gba.title" = "À propos";
+
+/* Class = "NSMenuItem"; title = "Server Preferences…"; ObjectID = "M5r-E7-44f"; */
+"M5r-E7-44f.title" = "Préférences des serveurs…";
+
+/* Class = "NSMenuItem"; title = "Global Mode"; ObjectID = "Mw3-Jm-eXA"; */
+"Mw3-Jm-eXA.title" = "Mode global";
+
+/* Class = "NSMenuItem"; title = "Scan QR Code From Screen"; ObjectID = "Qe6-bF-paT"; */
+"Qe6-bF-paT.title" = "Scanner le code QR à partir de l’écran";
+
+/* Class = "NSMenuItem"; title = "Update PAC from GFW List"; ObjectID = "TFc-Ec-duM"; */
+"TFc-Ec-duM.title" = "Mettre à jour le PAC à partir de la GFW List";
+
+/* Class = "NSMenuItem"; title = "Auto Mode By External PAC"; ObjectID = "U9N-QS-BwB"; */
+"U9N-QS-BwB.title" = "Mode automatique par PAC externe";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "Xg8-er-4Ov"; */
+"Xg8-er-4Ov.title" = "Aide";
+
+/* Class = "NSMenuItem"; title = "Export Diagnosis…"; ObjectID = "eNh-vY-utd"; */
+"eNh-vY-utd.title" = "Exporter les diagnostics…";
+
+/* Class = "NSMenuItem"; title = "Showsocks: On"; ObjectID = "fzk-mE-CEV"; */
+"fzk-mE-CEV.title" = "Shadowsocks : activé";
+
+/* Class = "NSMenuItem"; title = "Import Server URLs…"; ObjectID = "geG-dQ-OYl"; */
+"geG-dQ-OYl.title" = "Importer les URL des serveurs…";
+
+/* Class = "NSMenuItem"; title = "Check for Updates…"; ObjectID = "hLv-bp-doM"; */
+"hLv-bp-doM.title" = "Rechercher des mises à jour…";
+
+/* Class = "NSMenuItem"; title = "HTTP Proxy Export Line To Pasteboard"; ObjectID = "lg6-To-GZA"; */
+"lg6-To-GZA.title" = "Ligne d’export du proxy HTTP vers le presse-papiers";
+
+/* Class = "NSMenuItem"; title = "Auto Mode By PAC"; ObjectID = "r07-Gu-aEz"; */
+"r07-Gu-aEz.title" = "Mode automatique par PAC";
+
+/* Class = "NSMenuItem"; title = "Share Server Profiles…"; ObjectID = "r5z-RB-LIZ"; */
+"r5z-RB-LIZ.title" = "Partager des profils de serveur…";
+
+/* Class = "NSMenuItem"; title = "Edit User Rules For PAC…"; ObjectID = "rms-p0-CvB"; */
+"rms-p0-CvB.title" = "Modifier les règles d’utilisateur pour PAC…";
+
+/* Class = "NSMenuItem"; title = "Servers"; ObjectID = "u5M-hQ-VSc"; */
+"u5M-hQ-VSc.title" = "Serveurs";
+
+/* Class = "NSMenuItem"; title = "Quit"; ObjectID = "vJS-JW-byz"; */
+"vJS-JW-byz.title" = "Quitter";

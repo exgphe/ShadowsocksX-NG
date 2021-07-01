@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,7 +17,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="544" y="557" width="680" height="270"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2048" height="1152"/>
             <view key="contentView" id="se5-gp-TjO">
                 <rect key="frame" x="0.0" y="0.0" width="680" height="270"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -35,9 +34,9 @@
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="doh-o9-XXh">
-                        <rect key="frame" x="516" y="13" width="150" height="32"/>
+                        <rect key="frame" x="515" y="14" width="152" height="32"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="138" id="uoX-dr-Ak1"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="138" id="uoX-dr-Ak1"/>
                         </constraints>
                         <buttonCell key="cell" type="push" title="Import" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="EW8-ld-aGr">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -50,6 +49,7 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="EgI-Py-Op1" firstAttribute="trailing" secondItem="doh-o9-XXh" secondAttribute="trailing" id="K62-uO-jYd"/>
+                    <constraint firstItem="doh-o9-XXh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" symbolic="YES" id="g9k-wJ-tvJ"/>
                     <constraint firstItem="EgI-Py-Op1" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" symbolic="YES" id="ghl-kH-ozW"/>
                     <constraint firstAttribute="trailing" secondItem="EgI-Py-Op1" secondAttribute="trailing" constant="20" symbolic="YES" id="mTU-X2-mS7"/>
                     <constraint firstItem="EgI-Py-Op1" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" symbolic="YES" id="oet-Qd-ugX"/>
@@ -59,6 +59,7 @@
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
             </connections>
+            <point key="canvasLocation" x="37" y="144"/>
         </window>
     </objects>
 </document>

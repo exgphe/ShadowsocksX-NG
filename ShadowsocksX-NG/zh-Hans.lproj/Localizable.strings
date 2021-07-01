@@ -46,8 +46,6 @@
 
 "Servers - (No Selected)" = "服务器 - (未选择)";
 
-"Add \(addCount) Shadowsocks Server Profile" = "新增 \(addCount) 个 Shadowsocks 服务器配置";
-
 "Not found valid QRCode of shadowsocks profile" = "未找到有效的 shadowsocks 二维码";
 
 "Not found valid URL of shadowsocks profile" = "未找到有效的 shadowsocks 链接";
@@ -72,8 +70,6 @@
  * ./ShadowsocksX-NG/ImportWindowController.swift
  */
 
-"Success to add \(addCount) server." = "成功添加 \(addCount) 个服务器";
-
 "Not found valid shadowsocks server urls." = "未找到有效的shadowsocks服务器URL";
 
 /*
@@ -82,4 +78,6 @@
 
 "New Server" = "新建服务器";
 
+"Visible" = "可见";
 
+"Hidden" = "隐藏";

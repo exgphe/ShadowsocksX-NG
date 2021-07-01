@@ -46,8 +46,6 @@
 
 "By import from pasteboard" = "By import from pasteboard";
 
-"Add \(addCount) Shadowsocks Server Profile" = "Add \(addCount) Shadowsocks Server Profile";
-
 "Not found valid QRCode of shadowsocks profile" = "Not found valid QRCode of shadowsocks profile";
 
 "Not found valid URL of shadowsocks profile" = "Not found valid URL of shadowsocks profile";
@@ -71,8 +69,6 @@
 /*
  * ./ShadowsocksX-NG/ImportWindowController.swift
  */
-
-"Success to add \(addCount) server." = "Success to add \(addCount) server.";
 
 "Not found valid shadowsocks server urls." = "Not found valid shadowsocks server urls.";
 

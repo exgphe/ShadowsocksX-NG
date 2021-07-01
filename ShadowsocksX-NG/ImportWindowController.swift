@@ -42,7 +42,7 @@ class ImportWindowController: NSWindowController {
         if addCount > 0 {
             let alert = NSAlert.init()
             alert.alertStyle = .informational;
-            alert.messageText = "Success to add \(addCount) server.".localized
+            alert.messageText = "Success to add %d server.".localized(withNumber: addCount)
             alert.addButton(withTitle: "OK")
             alert.runModal()
             self.close()

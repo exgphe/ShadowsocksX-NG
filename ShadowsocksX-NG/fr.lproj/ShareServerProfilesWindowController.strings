@@ -1,0 +1,30 @@
+
+/* Class = "NSButtonCell"; title = "Save All Server URLs As File"; ObjectID = "9OS-xy-GB1"; */
+"9OS-xy-GB1.title" = "Enregistrer toutes les URL du serveur en tant que fichier";
+
+/* Class = "NSTableColumn"; headerCell.title = "Server"; ObjectID = "BVB-7v-GrU"; */
+"BVB-7v-GrU.headerCell.title" = "Serveur";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "EIQ-Bg-vVe"; */
+"EIQ-Bg-vVe.title" = "Table View Cell";
+
+/* Class = "NSWindow"; title = "Share Server Profiles"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "Partager des profils de serveur";
+
+/* Class = "NSButtonCell"; title = "Save QRCode As File"; ObjectID = "IaI-Rj-Kss"; */
+"IaI-Rj-Kss.title" = "Enregistrer le code QR en tant que fichier";
+
+/* Class = "NSButtonCell"; title = "Copy URL"; ObjectID = "PHX-gY-lZe"; */
+"PHX-gY-lZe.title" = "Copier l’URL";
+
+/* Class = "NSButtonCell"; title = "Copy QRCode"; ObjectID = "PrW-s6-Uab"; */
+"PrW-s6-Uab.title" = "Copier le code QR";
+
+/* Class = "NSButtonCell"; title = "Copy All Server URLs"; ObjectID = "Yt2-p1-4w0"; */
+"Yt2-p1-4w0.title" = "Copier toutes les URL du serveur";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Z7X-TN-APg"; */
+"Z7X-TN-APg.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "The QRCode is in SIP002 format"; ObjectID = "czc-dd-Tcq"; */
+"czc-dd-Tcq.title" = "Le code QR est au format SIP002";

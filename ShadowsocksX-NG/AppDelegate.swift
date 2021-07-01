@@ -15,7 +15,6 @@ import RxSwift
 class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDelegate {
     
     var shareWinCtrl: ShareServerProfilesWindowController!
-    var qrcodeWinCtrl: SWBQRCodeWindowController!
     var preferencesWinCtrl: PreferencesWindowController!
     var editUserRulesWinCtrl: UserRulesController!
     var allInOnePreferencesWinCtrl: PreferencesWinController!
@@ -435,7 +434,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     }
     
     @IBAction func feedback(_ sender: NSMenuItem) {
-        NSWorkspace.shared.open(URL(string: "https://github.com/qiuyuzhou/ShadowsocksX-NG/issues")!)
+        NSWorkspace.shared.open(URL(string: "https://github.com/exgphe/ShadowsocksX-NG/issues")!)
     }
     
     @IBAction func checkForUpdates(_ sender: NSMenuItem) {
@@ -457,7 +456,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
         
         savePanel.becomeKey()
         let result = savePanel.runModal()
-        if (result.rawValue == NSFileHandlingPanelOKButton) {
+        if (result == NSApplication.ModalResponse.OK) {
             if let url = savePanel.url {
                 let diagnosisText = diagnose()
                 try! diagnosisText.write(to: url, atomically: false, encoding: String.Encoding.utf8)
@@ -656,7 +655,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
                     subtitle = "By import from pasteboard".localized
                 }
                 
-                sendNotify("Add \(addCount) Shadowsocks Server Profile".localized, subtitle, "")
+                sendNotify("Add %d Shadowsocks Server Profile".localized(withNumber: addCount), subtitle, "")
             } else {
                 if userInfo["source"] as! String == "qrcode" {
                     sendNotify("", "", "Not found valid QRCode of shadowsocks profile".localized)

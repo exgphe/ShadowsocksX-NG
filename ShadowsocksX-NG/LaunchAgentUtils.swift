@@ -16,9 +16,9 @@ let SIMPLE_OBFS_VERSION = "0.0.5_1"
 let APP_SUPPORT_DIR = "/Library/Application Support/ShadowsocksX-NG/"
 let USER_CONFIG_DIR = "/.ShadowsocksX-NG/"
 let LAUNCH_AGENT_DIR = "/Library/LaunchAgents/"
-let LAUNCH_AGENT_CONF_SSLOCAL_NAME = "com.qiuyuzhou.shadowsocksX-NG.local.plist"
-let LAUNCH_AGENT_CONF_PRIVOXY_NAME = "com.qiuyuzhou.shadowsocksX-NG.http.plist"
-let LAUNCH_AGENT_CONF_KCPTUN_NAME = "com.qiuyuzhou.shadowsocksX-NG.kcptun.plist"
+let LAUNCH_AGENT_CONF_SSLOCAL_NAME = "com.exgphe.shadowsocksX-NG.local.plist"
+let LAUNCH_AGENT_CONF_PRIVOXY_NAME = "com.exgphe.shadowsocksX-NG.http.plist"
+let LAUNCH_AGENT_CONF_KCPTUN_NAME = "com.exgphe.shadowsocksX-NG.kcptun.plist"
 
 
 func getFileSHA1Sum(_ filepath: String) -> String {
@@ -67,7 +67,7 @@ func generateSSLocalLauchAgentPlist() -> Bool {
         ]
     
     let dict: NSMutableDictionary = [
-        "Label": "com.qiuyuzhou.shadowsocksX-NG.local",
+        "Label": "com.exgphe.shadowsocksX-NG.local",
         "WorkingDirectory": NSHomeDirectory() + APP_SUPPORT_DIR,
         "StandardOutPath": logFilePath,
         "StandardErrorPath": logFilePath,
@@ -280,7 +280,7 @@ func generatePrivoxyLauchAgentPlist() -> Bool {
     
     // For a complete listing of the keys, see the launchd.plist manual page.
     let dict: NSMutableDictionary = [
-        "Label": "com.qiuyuzhou.shadowsocksX-NG.http",
+        "Label": "com.exgphe.shadowsocksX-NG.http",
         "WorkingDirectory": NSHomeDirectory() + APP_SUPPORT_DIR,
         "StandardOutPath": logFilePath,
         "StandardErrorPath": logFilePath,

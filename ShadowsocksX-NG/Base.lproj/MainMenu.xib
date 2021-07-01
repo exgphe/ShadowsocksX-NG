@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -69,7 +68,7 @@
                     <modifierMask key="keyEquivalentModifierMask" shift="YES"/>
                     <menu key="submenu" title="Servers" id="9Y1-db-3HK">
                         <items>
-                            <menuItem title="Server Preferences..." keyEquivalent="e" id="M5r-E7-44f">
+                            <menuItem title="Server Preferences…" keyEquivalent="e" id="M5r-E7-44f">
                                 <connections>
                                     <action selector="editServerPreferences:" target="Voe-Tx-rLC" id="6Lv-6i-Neb"/>
                                 </connections>
@@ -85,25 +84,25 @@
                         <action selector="scanQRCodeFromScreen:" target="Voe-Tx-rLC" id="zQZ-IT-H4a"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Import Server URLs..." id="geG-dQ-OYl">
+                <menuItem title="Import Server URLs…" id="geG-dQ-OYl">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="showImportWindow:" target="-1" id="CsE-vW-Wcn"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Share Server Profiles..." image="NSShareTemplate" id="r5z-RB-LIZ">
+                <menuItem title="Share Server Profiles…" image="NSShareTemplate" id="r5z-RB-LIZ">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="showShareServerProfiles:" target="Voe-Tx-rLC" id="3Qv-n1-5h1"/>
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="vwY-hQ-ZIz"/>
-                <menuItem title="Preferences..." keyEquivalent="," id="4CS-qD-zW5">
+                <menuItem title="Preferences…" keyEquivalent="," id="4CS-qD-zW5">
                     <connections>
                         <action selector="showAllInOnePreferences:" target="Voe-Tx-rLC" id="2of-nZ-atc"/>
                     </connections>
                 </menuItem>
-                <menuItem title="HTTP Proxy Export Line To Pasteboard" image="terminal-logo" keyEquivalent="c" id="lg6-To-GZA">
+                <menuItem title="HTTP Proxy Export Line To Pasteboard" image="terminal" catalog="system" keyEquivalent="c" id="lg6-To-GZA">
                     <connections>
                         <action selector="copyExportCommand:" target="Voe-Tx-rLC" id="2U4-3M-sAK"/>
                     </connections>
@@ -114,26 +113,26 @@
                         <action selector="updateGFWList:" target="Voe-Tx-rLC" id="Ztt-PS-F3T"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Edit User Rules For PAC..." id="rms-p0-CvB">
+                <menuItem title="Edit User Rules For PAC…" id="rms-p0-CvB">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="editUserRulesForPAC:" target="Voe-Tx-rLC" id="ZtK-2d-Pcl"/>
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="DTJ-NF-Wxr"/>
-                <menuItem title="Show Logs..." id="Jfy-sf-Fhl">
+                <menuItem title="Show Logs…" id="Jfy-sf-Fhl">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="showLogs:" target="Voe-Tx-rLC" id="5FZ-Xo-DGb"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Export Diagnosis..." id="eNh-vY-utd">
+                <menuItem title="Export Diagnosis…" id="eNh-vY-utd">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="exportDiagnosis:" target="Voe-Tx-rLC" id="YM9-l3-PHa"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Check for Updates..." id="hLv-bp-doM">
+                <menuItem title="Check for Updates…" id="hLv-bp-doM">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="checkForUpdates:" target="Voe-Tx-rLC" id="rWL-H9-me8"/>
@@ -163,7 +162,7 @@
         <userDefaultsController representsSharedInstance="YES" id="jhL-aG-BFA"/>
     </objects>
     <resources>
-        <image name="NSShareTemplate" width="11" height="16"/>
-        <image name="terminal-logo" width="22.695652008056641" height="17.217391967773438"/>
+        <image name="NSShareTemplate" width="15" height="17"/>
+        <image name="terminal" catalog="system" width="18" height="14"/>
     </resources>
 </document>

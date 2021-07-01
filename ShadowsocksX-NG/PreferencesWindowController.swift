@@ -158,10 +158,12 @@ class PreferencesWindowController: NSWindowController
     @IBAction func togglePasswordVisible(_ sender: Any) {
         if passwordTabView.selectedTabViewItem?.identifier as! String == "secure" {
             passwordTabView.selectTabViewItem(withIdentifier: "insecure")
-            togglePasswordVisibleButton.image = NSImage(named: "icons8-Eye Filled-50")
+            togglePasswordVisibleButton.image = NSImage(systemSymbolName: "eye.fill", accessibilityDescription: "Visible".localized)
+            togglePasswordVisibleButton.state = .on
         } else {
             passwordTabView.selectTabViewItem(withIdentifier: "secure")
-            togglePasswordVisibleButton.image = NSImage(named: "icons8-Blind Filled-50")
+            togglePasswordVisibleButton.image = NSImage(systemSymbolName: "eye.slash.fill", accessibilityDescription: "Hidden".localized)
+            togglePasswordVisibleButton.state = .off
         }
     }
     

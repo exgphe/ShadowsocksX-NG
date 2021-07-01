@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Success to add %d server.</key>
+    <dict>
+        <key>NSStringLocalizedFormatKey</key>
+        <string>%#@addCount@</string>
+        <key>addCount</key>
+        <dict>
+            <key>NSStringFormatSpecTypeKey</key>
+            <string>NSStringPluralRuleType</string>
+            <key>NSStringFormatValueTypeKey</key>
+            <string>d</string>
+            <key>other</key>
+            <string>成功添加%d个服务器</string>
+        </dict>
+    </dict>
+    <key>Add %d Shadowsocks Server Profile</key>
+    <dict>
+        <key>NSStringLocalizedFormatKey</key>
+        <string>%#@addCount@</string>
+        <key>addCount</key>
+        <dict>
+            <key>NSStringFormatSpecTypeKey</key>
+            <string>NSStringPluralRuleType</string>
+            <key>NSStringFormatValueTypeKey</key>
+            <string>d</string>
+            <key>other</key>
+            <string>新增%d个 Shadowsocks 服务器配置</string>
+        </dict>
+    </dict>
+</dict>
+</plist>
