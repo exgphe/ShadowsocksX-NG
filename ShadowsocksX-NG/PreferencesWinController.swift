@@ -19,7 +19,17 @@ class PreferencesWinController: NSWindowController {
         super.windowDidLoad()
 
         // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
-        toolbar.selectedItemIdentifier = NSToolbarItem.Identifier(rawValue: "general")
+        let defaults = UserDefaults.standard
+        let identifier = defaults.string(forKey: "LastPreferencePane") ?? "general"
+        toolbar.selectedItemIdentifier = NSToolbarItem.Identifier(rawValue: identifier)
+        tabView.selectTabViewItem(withIdentifier: identifier)
+        for item in toolbar.items {
+            if item.itemIdentifier == toolbar.selectedItemIdentifier {
+                window?.title = item.label
+                break
+            }
+        }
+        resetWindowFrame()
     }
     
     @objc func windowWillClose(_ notification: Notification) {
@@ -29,6 +39,24 @@ class PreferencesWinController: NSWindowController {
     
     @IBAction func toolbarAction(sender: NSToolbarItem) {
         tabView.selectTabViewItem(withIdentifier: sender.itemIdentifier)
+        window?.title = sender.label
+        resetWindowFrame()
+        DispatchQueue.global(qos: .utility).async {
+            let defaults = UserDefaults.standard
+            defaults.setValue(sender.itemIdentifier.rawValue, forKey: "LastPreferencePane")
+        }
+    }
+    
+    func resetWindowFrame() {
+        if let window = window {
+            let contentSize = tabView.fittingSize
+            let newWindowSize = window.frameRect(forContentRect: CGRect(origin: .zero, size: contentSize)).size
+            var frame = window.frame
+            frame.origin.y += frame.height - newWindowSize.height
+            frame.size = newWindowSize
+
+            window.setFrame(frame, display: false)
+        }
     }
 
     @IBAction func resetProxyExceptions(sender: NSButton) {
