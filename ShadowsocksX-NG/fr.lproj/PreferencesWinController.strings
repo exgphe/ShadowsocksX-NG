@@ -56,9 +56,6 @@
 /* Class = "NSToolbarItem"; paletteLabel = "General"; ObjectID = "Mp8-cF-kQ7"; */
 "Mp8-cF-kQ7.paletteLabel" = "Général";
 
-/* Class = "NSButtonCell"; title = "Enable UDP Relay"; ObjectID = "R3v-iN-zu8"; */
-"R3v-iN-zu8.title" = "Activer le relais UDP";
-
 /* Class = "NSTextFieldCell"; title = "HTTP Proxy Listen Port:"; ObjectID = "Ww9-j9-WYR"; */
 "Ww9-j9-WYR.title" = "Port d’écoute du proxy HTTP :";
 
@@ -70,9 +67,6 @@
 
 /* Class = "NSButtonCell"; title = "Auto Configure"; ObjectID = "bu3-s5-bYM"; */
 "bu3-s5-bYM.title" = "Configuration automatique";
-
-/* Class = "NSButtonCell"; title = "Enable Verbose Mode"; ObjectID = "cIS-Wb-Rzg"; */
-"cIS-Wb-Rzg.title" = "Activer le mode détaillé";
 
 /* Class = "NSTabViewItem"; label = "Interfaces"; ObjectID = "eDR-CZ-P4p"; */
 "eDR-CZ-P4p.label" = "Interfaces";

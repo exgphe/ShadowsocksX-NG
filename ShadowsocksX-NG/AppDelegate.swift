@@ -80,7 +80,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
         
         self.ensureLaunchAgentsDirOwner()
         
-        // Prepare ss-local
+        // Prepare sslocal
         InstallSSLocal()
         InstallPrivoxy()
         InstallSimpleObfs()
@@ -97,8 +97,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
             "PacServer.BindToLocalhost": NSNumber(value: true as Bool),
             "PacServer.ListenPort":NSNumber(value: 1089 as UInt16),
             "LocalSocks5.Timeout": NSNumber(value: 60 as UInt),
-            "LocalSocks5.EnableUDPRelay": NSNumber(value: false as Bool),
-            "LocalSocks5.EnableVerboseMode": NSNumber(value: false as Bool),
+            "LocalSocks5.EnableVerboseMode": NSNumber(value: 0 as UInt8),
             "GFWListURL": "https://cdn.jsdelivr.net/gh/gfwlist/gfwlist/gfwlist.txt",
             "AutoConfigureNetworkServices": NSNumber(value: true as Bool),
             "LocalHTTP.ListenAddress": "127.0.0.1",
@@ -116,7 +115,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
         statusItem = NSStatusBar.system.statusItem(withLength: AppDelegate.StatusItemIconWidth)
         let image : NSImage = NSImage(named: "menu_icon")!
         image.isTemplate = true
-        statusItem.image = image
+        statusItem.button?.image = image
         statusItem.menu = statusMenu
         
         let notifyCenter = NotificationCenter.default
@@ -427,9 +426,9 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     @IBAction func showLogs(_ sender: NSMenuItem) {
         let ws = NSWorkspace.shared
         if let appUrl = ws.urlForApplication(withBundleIdentifier: "com.apple.Console") {
-            try! ws.launchApplication(at: appUrl
-                ,options: NSWorkspace.LaunchOptions.default
-                ,configuration: [NSWorkspace.LaunchConfigurationKey.arguments: "~/Library/Logs/ss-local.log"])
+            let configuration = NSWorkspace.OpenConfiguration()
+            ws.openApplication(at: appUrl, configuration: configuration, completionHandler: nil)
+            ws.open([URL(fileURLWithPath: NSHomeDirectory() + "/Library/Logs/ss-local.log")], withApplicationAt: appUrl, configuration: configuration, completionHandler: nil)
         }
     }
     

@@ -21,7 +21,7 @@ DEPENDENCIES:
   - RxSwift (~> 6.2.0)
 
 SPEC REPOS:
-  trunk:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - Alamofire
     - BRLOptionParser
     - GCDWebServer

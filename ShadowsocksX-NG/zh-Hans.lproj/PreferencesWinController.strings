@@ -64,9 +64,6 @@
 /* Class = "NSToolbarItem"; paletteLabel = "General"; ObjectID = "Mp8-cF-kQ7"; */
 "Mp8-cF-kQ7.paletteLabel" = "常规";
 
-/* Class = "NSButtonCell"; title = "Enable Udp Replay"; ObjectID = "R3v-iN-zu8"; */
-"R3v-iN-zu8.title" = "启用 UDP 中继";
-
 /* Class = "NSTextFieldCell"; title = "HTTP Proxy Listen Port:"; ObjectID = "Ww9-j9-WYR"; */
 "Ww9-j9-WYR.title" = "HTTP代理监听端口:";
 
@@ -78,9 +75,6 @@
 
 /* Class = "NSTextFieldCell"; title = "Bypass proxy settings for these Hosts & Domains:"; ObjectID = "v4F-L4-s8U"; */
 "v4F-L4-s8U.title" = "忽略这些主机与域的代理设置：";
-
-/* Class = "NSButtonCell"; title = "Enable Verbose Mode"; ObjectID = "cIS-Wb-Rzg"; */
-"cIS-Wb-Rzg.title" = "Enable Verbose Mode";
 
 /* Class = "NSTabViewItem"; label = "Interfaces"; ObjectID = "eDR-CZ-P4p"; */
 "eDR-CZ-P4p.label" = "网络接口";

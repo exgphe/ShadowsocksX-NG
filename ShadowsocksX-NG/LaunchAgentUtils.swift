@@ -34,8 +34,8 @@ func getFileSHA1Sum(_ filepath: String) -> String {
 //  MARK: sslocal
 
 func generateSSLocalLauchAgentPlist() -> Bool {
-    let sslocalPath = NSHomeDirectory() + APP_SUPPORT_DIR + "ss-local-latest/ss-local"
-    let logFilePath = NSHomeDirectory() + "/Library/Logs/ss-local.log"
+    let sslocalPath = NSHomeDirectory() + APP_SUPPORT_DIR + "sslocal-latest/sslocal"
+    let logFilePath = NSHomeDirectory() + "/Library/Logs/sslocal.log"
     let launchAgentDirPath = NSHomeDirectory() + LAUNCH_AGENT_DIR
     let plistFilepath = launchAgentDirPath + LAUNCH_AGENT_CONF_SSLOCAL_NAME
     
@@ -48,31 +48,21 @@ func generateSSLocalLauchAgentPlist() -> Bool {
     let oldSha1Sum = getFileSHA1Sum(plistFilepath)
     
     let defaults = UserDefaults.standard
-    let enableUdpRelay = defaults.bool(forKey: "LocalSocks5.EnableUDPRelay")
     let enableVerboseMode = defaults.bool(forKey: "LocalSocks5.EnableVerboseMode")
     
     var arguments = [sslocalPath, "-c", "ss-local-config.json"]
-    if enableUdpRelay {
-        arguments.append("-u")
-    }
     if enableVerboseMode {
         arguments.append("-v")
     }
-    arguments.append("--reuse-port")
     
     // For a complete listing of the keys, see the launchd.plist manual page.
-    let dyld_library_paths = [
-        NSHomeDirectory() + APP_SUPPORT_DIR + "ss-local-latest/",
-        NSHomeDirectory() + APP_SUPPORT_DIR + "plugins/",
-        ]
     
     let dict: NSMutableDictionary = [
         "Label": "com.exgphe.shadowsocksX-NG.local",
         "WorkingDirectory": NSHomeDirectory() + APP_SUPPORT_DIR,
         "StandardOutPath": logFilePath,
         "StandardErrorPath": logFilePath,
-        "ProgramArguments": arguments,
-        "EnvironmentVariables": ["DYLD_LIBRARY_PATH": dyld_library_paths.joined(separator: ":")]
+        "ProgramArguments": arguments
     ]
     dict.write(toFile: plistFilepath, atomically: true)
     let Sha1Sum = getFileSHA1Sum(plistFilepath)
@@ -91,9 +81,9 @@ func StartSSLocal() {
     let task = Process.launchedProcess(launchPath: installerPath!, arguments: [""])
     task.waitUntilExit()
     if task.terminationStatus == 0 {
-        NSLog("Start ss-local succeeded.")
+        NSLog("Start sslocal succeeded.")
     } else {
-        NSLog("Start ss-local failed.")
+        NSLog("Start sslocal failed.")
     }
 }
 
@@ -103,9 +93,9 @@ func StopSSLocal() {
     let task = Process.launchedProcess(launchPath: installerPath!, arguments: [""])
     task.waitUntilExit()
     if task.terminationStatus == 0 {
-        NSLog("Stop ss-local succeeded.")
+        NSLog("Stop sslocal succeeded.")
     } else {
-        NSLog("Stop ss-local failed.")
+        NSLog("Stop sslocal failed.")
     }
 }
 
@@ -113,23 +103,24 @@ func InstallSSLocal() {
     let fileMgr = FileManager.default
     let homeDir = NSHomeDirectory()
     let appSupportDir = homeDir+APP_SUPPORT_DIR
-    if !fileMgr.fileExists(atPath: appSupportDir + "ss-local-\(SS_LOCAL_VERSION)/ss-local")
-       || !fileMgr.fileExists(atPath: appSupportDir + "ss-local-\(SS_LOCAL_VERSION)/libmbedcrypto.0.dylib") {
+    if !fileMgr.fileExists(atPath: appSupportDir + "sslocal-\(SS_LOCAL_VERSION)/sslocal") {
         let bundle = Bundle.main
         let installerPath = bundle.path(forResource: "install_ss_local.sh", ofType: nil)
         let task = Process.launchedProcess(launchPath: installerPath!, arguments: [""])
         task.waitUntilExit()
         if task.terminationStatus == 0 {
-            NSLog("Install ss-local succeeded.")
+            NSLog("Install sslocal succeeded.")
         } else {
-            NSLog("Install ss-local failed.")
+            NSLog("Install sslocal failed.")
         }
     }
 }
 
-func writeSSLocalConfFile(_ conf:[String:AnyObject]) -> Bool {
+func writeSSLocalConfFile(_ _conf:[String:AnyObject]) -> Bool {
     do {
-        let filepath = NSHomeDirectory() + APP_SUPPORT_DIR + "ss-local-config.json"
+        let defaults = UserDefaults.standard
+        var conf = _conf
+        let filepath = NSHomeDirectory() + APP_SUPPORT_DIR + "sslocal-config.json"
         var data: Data = try JSONSerialization.data(withJSONObject: conf, options: .prettyPrinted)
 
         // https://github.com/shadowsocks/ShadowsocksX-NG/issues/1104
@@ -151,14 +142,14 @@ func writeSSLocalConfFile(_ conf:[String:AnyObject]) -> Bool {
         NSLog("writeSSLocalConfFile - File has been changed.")
         return true
     } catch {
-        NSLog("Write ss-local file failed.")
+        NSLog("Write sslocal file failed.")
     }
     return false
 }
 
 func removeSSLocalConfFile() {
     do {
-        let filepath = NSHomeDirectory() + APP_SUPPORT_DIR + "ss-local-config.json"
+        let filepath = NSHomeDirectory() + APP_SUPPORT_DIR + "sslocal-config.json"
         try FileManager.default.removeItem(atPath: filepath)
     } catch {
         
