@@ -18,6 +18,9 @@ class ServerProfile: NSObject, NSCopying {
     @objc var method:String = "aes-128-gcm"
     @objc var password:String = ""
     @objc var remark:String = ""
+    @objc var tcpFastOpen: Bool = false
+    @objc var tcpNoDelay: Bool = false
+    @objc var mode = "tcp_only"
     
     // SIP003 Plugin
     @objc var plugin: String = ""  // empty string disables plugin
@@ -150,6 +153,9 @@ class ServerProfile: NSObject, NSCopying {
         copy.method = self.method
         copy.password = self.password
         copy.remark = self.remark
+        copy.tcpNoDelay = self.tcpNoDelay
+        copy.tcpFastOpen = self.tcpFastOpen
+        copy.mode = self.mode
         
         copy.plugin = self.plugin
         copy.pluginOptions = self.pluginOptions
@@ -163,6 +169,15 @@ class ServerProfile: NSObject, NSCopying {
             profile.serverPort = (data["ServerPort"] as! NSNumber).uint16Value
             profile.method = data["Method"] as! String
             profile.password = data["Password"] as! String
+            if let tcpNoDelay = data["TcpNoDelay"] {
+                profile.tcpNoDelay = tcpNoDelay as! Bool
+            }
+            if let tcpFastOpen = data["TcpFastOpen"] {
+                profile.tcpFastOpen = tcpFastOpen as! Bool
+            }
+            if let mode = data["Mode"] {
+                profile.mode = mode as! String
+            }
             if let remark = data["Remark"] {
                 profile.remark = remark as! String
             }
@@ -192,6 +207,9 @@ class ServerProfile: NSObject, NSCopying {
         d["ServerPort"] = NSNumber(value: serverPort as UInt16)
         d["Method"] = method as AnyObject?
         d["Password"] = password as AnyObject?
+        d["TcpNoDelay"] = tcpNoDelay as AnyObject?
+        d["TcpFastOpen"] = tcpFastOpen as AnyObject?
+        d["Mode"] = mode as AnyObject?
         d["Remark"] = remark as AnyObject?
         d["Plugin"] = plugin as AnyObject
         d["PluginOptions"] = pluginOptions as AnyObject
@@ -200,7 +218,9 @@ class ServerProfile: NSObject, NSCopying {
 
     func toJsonConfig() -> [String: AnyObject] {
         var conf: [String: AnyObject] = ["password": password as AnyObject,
-                                         "method": method as AnyObject,]
+                                         "method": method as AnyObject,
+                                         "mode": mode as AnyObject,
+        ]
         
         let defaults = UserDefaults.standard
         conf["local_port"] = NSNumber(value: UInt16(defaults.integer(forKey: "LocalSocks5.ListenPort")) as UInt16)
@@ -208,6 +228,14 @@ class ServerProfile: NSObject, NSCopying {
         conf["timeout"] = NSNumber(value: UInt32(defaults.integer(forKey: "LocalSocks5.Timeout")) as UInt32)
         conf["server"] = serverHost as AnyObject
         conf["server_port"] = NSNumber(value: serverPort as UInt16)
+        
+        if tcpFastOpen {
+            conf["fast_open"] = true as AnyObject
+        }
+        
+        if tcpNoDelay {
+            conf["no_delay"] = true as AnyObject
+        }
 
         if !plugin.isEmpty {
             // all plugin binaries should be located in the plugins dir
@@ -225,6 +253,9 @@ class ServerProfile: NSObject, NSCopying {
         print("ServerPort=\(serverPort)", to: &buf)
         print("Method=\(method)", to: &buf)
         print("Password=\(String(repeating: "*", count: password.count))", to: &buf)
+        print("TcpNoDelay=\(tcpNoDelay)", to: &buf)
+        print("TcpFastOpen=\(tcpFastOpen)", to: &buf)
+        print("Mode=\(mode)", to: &buf)
         print("Plugin=\(plugin)", to: &buf)
         print("PluginOptions=\(pluginOptions)", to: &buf)
         return buf

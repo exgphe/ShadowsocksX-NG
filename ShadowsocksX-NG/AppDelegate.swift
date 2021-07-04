@@ -97,7 +97,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
             "PacServer.BindToLocalhost": NSNumber(value: true as Bool),
             "PacServer.ListenPort":NSNumber(value: 1089 as UInt16),
             "LocalSocks5.Timeout": NSNumber(value: 60 as UInt),
-            "LocalSocks5.EnableVerboseMode": NSNumber(value: 0 as UInt8),
+            "LocalSocks5.VerboseMode": NSNumber(value: 0 as UInt8),
             "GFWListURL": "https://cdn.jsdelivr.net/gh/gfwlist/gfwlist/gfwlist.txt",
             "AutoConfigureNetworkServices": NSNumber(value: true as Bool),
             "LocalHTTP.ListenAddress": "127.0.0.1",

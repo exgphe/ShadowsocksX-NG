@@ -48,11 +48,11 @@ func generateSSLocalLauchAgentPlist() -> Bool {
     let oldSha1Sum = getFileSHA1Sum(plistFilepath)
     
     let defaults = UserDefaults.standard
-    let enableVerboseMode = defaults.bool(forKey: "LocalSocks5.EnableVerboseMode")
+    let verboseMode = defaults.integer(forKey: "LocalSocks5.VerboseMode")
     
     var arguments = [sslocalPath, "-c", "ss-local-config.json"]
-    if enableVerboseMode {
-        arguments.append("-v")
+    if verboseMode > 0 {
+        arguments.append("-" + String(repeating: "v", count: verboseMode))
     }
     
     // For a complete listing of the keys, see the launchd.plist manual page.

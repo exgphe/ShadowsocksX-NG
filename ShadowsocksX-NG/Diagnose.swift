@@ -44,7 +44,7 @@ func diagnose() -> String {
         "PacServer.BindToLocalhost",
         "PacServer.ListenPort",
         "LocalSocks5.Timeout",
-        "LocalSocks5.EnableVerboseMode",
+        "LocalSocks5.VerboseMode",
         "GFWListURL",
         "LocalHTTP.ListenAddress",
         "LocalHTTP.ListenPort",

@@ -25,6 +25,11 @@ class PreferencesWindowController: NSWindowController
     @IBOutlet weak var passwordTextField: NSTextField!
     @IBOutlet weak var passwordSecureTextField: NSSecureTextField!
     @IBOutlet weak var togglePasswordVisibleButton: NSButton!
+    
+    @IBOutlet weak var tcpFastOpenButton: NSButton!
+    @IBOutlet weak var tcpNoDelayButton: NSButton!
+    @IBOutlet weak var modeField: NSComboBox!
+    
     @IBOutlet weak var pluginTextField: NSTextField!
     @IBOutlet weak var pluginOptionsTextField: NSTextField!
     @IBOutlet weak var remarkTextField: NSTextField!
@@ -229,6 +234,9 @@ class PreferencesWindowController: NSWindowController
                 , options: [NSBindingOption.continuouslyUpdatesValue: true])
             passwordSecureTextField.bind(NSBindingName(rawValue: "value"), to: editingProfile, withKeyPath: "password"
                 , options: [NSBindingOption.continuouslyUpdatesValue: true])
+            tcpFastOpenButton.bind(NSBindingName("value"), to: editingProfile, withKeyPath: "tcpFastOpen", options: [NSBindingOption.continuouslyUpdatesValue: true])
+            tcpNoDelayButton.bind(NSBindingName("value"), to: editingProfile, withKeyPath: "tcpNoDelay", options: [NSBindingOption.continuouslyUpdatesValue: true])
+            modeField.bind(NSBindingName("value"), to: editingProfile, withKeyPath: "mode", options: [NSBindingOption.continuouslyUpdatesValue: true])
 
             pluginTextField.bind(NSBindingName(rawValue: "value"), to: editingProfile, withKeyPath: "plugin"
                 , options: [NSBindingOption.continuouslyUpdatesValue: true])
