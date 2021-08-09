@@ -428,7 +428,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
         if let appUrl = ws.urlForApplication(withBundleIdentifier: "com.apple.Console") {
             let configuration = NSWorkspace.OpenConfiguration()
             ws.openApplication(at: appUrl, configuration: configuration, completionHandler: nil)
-            ws.open([URL(fileURLWithPath: NSHomeDirectory() + "/Library/Logs/ss-local.log")], withApplicationAt: appUrl, configuration: configuration, completionHandler: nil)
+            ws.open([URL(fileURLWithPath: NSHomeDirectory() + "/Library/Logs/sslocal.log")], withApplicationAt: appUrl, configuration: configuration, completionHandler: nil)
         }
     }
     

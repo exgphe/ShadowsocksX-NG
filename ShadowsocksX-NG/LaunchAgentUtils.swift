@@ -50,7 +50,7 @@ func generateSSLocalLauchAgentPlist() -> Bool {
     let defaults = UserDefaults.standard
     let verboseMode = defaults.integer(forKey: "LocalSocks5.VerboseMode")
     
-    var arguments = [sslocalPath, "-c", "ss-local-config.json"]
+    var arguments = [sslocalPath, "-c", "sslocal-config.json"]
     if verboseMode > 0 {
         arguments.append("-" + String(repeating: "v", count: verboseMode))
     }
