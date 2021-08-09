@@ -10,7 +10,7 @@
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
 NGDir="$HOME/Library/Application Support/ShadowsocksX-NG"
-TargetDir="$NGDir/sslocal-1.11.1"
+TargetDir="$NGDir/sslocal-1.11.2"
 LatestTargetDir="$NGDir/sslocal-latest"
 
 echo ngdir: ${NGDir}

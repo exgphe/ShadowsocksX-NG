@@ -116,10 +116,8 @@ func InstallSSLocal() {
     }
 }
 
-func writeSSLocalConfFile(_ _conf:[String:AnyObject]) -> Bool {
+func writeSSLocalConfFile(_ conf:[String:AnyObject]) -> Bool {
     do {
-        let defaults = UserDefaults.standard
-        var conf = _conf
         let filepath = NSHomeDirectory() + APP_SUPPORT_DIR + "sslocal-config.json"
         var data: Data = try JSONSerialization.data(withJSONObject: conf, options: .prettyPrinted)
 
