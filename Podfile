@@ -1,6 +1,6 @@
 # Uncomment this line to define a global platform for your project
 # platform :ios, '9.0'
-platform :macos, '11.3'
+platform :macos, '12.0'
 source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
 
 target 'ShadowsocksX-NG' do
@@ -8,7 +8,7 @@ target 'ShadowsocksX-NG' do
   use_frameworks!
 
   # Pods for ShadowsocksX-NG
-  pod 'Alamofire', '~> 5.4.3'
+  pod 'Alamofire', '~> 5.4'
   pod "GCDWebServer", "~> 3.0"
   pod 'MASShortcut', '~> 2'
   
