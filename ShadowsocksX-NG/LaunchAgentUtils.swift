@@ -8,10 +8,10 @@
 
 import Foundation
 
-let SS_LOCAL_VERSION = "1.11.2"
+let SS_LOCAL_VERSION = "1.13.2"
 let KCPTUN_CLIENT_VERSION = "v20190905_1"
 let V2RAY_PLUGIN_VERSION = "v1.3.1-9-gddd7ab4"
-let PRIVOXY_VERSION = "3.0.32.static"
+let PRIVOXY_VERSION = "3.0.33"
 let SIMPLE_OBFS_VERSION = "0.0.5_1"
 let APP_SUPPORT_DIR = "/Library/Application Support/ShadowsocksX-NG/"
 let USER_CONFIG_DIR = "/.ShadowsocksX-NG/"
@@ -252,7 +252,7 @@ func InstallV2rayPlugin() {
 //  MARK: privoxy
 
 func generatePrivoxyLauchAgentPlist() -> Bool {
-    let privoxyPath = NSHomeDirectory() + APP_SUPPORT_DIR + "privoxy"
+    let privoxyPath = "/opt/homebrew/sbin/privoxy"
     let logFilePath = NSHomeDirectory() + "/Library/Logs/privoxy.log"
     let launchAgentDirPath = NSHomeDirectory() + LAUNCH_AGENT_DIR
     let plistFilepath = launchAgentDirPath + LAUNCH_AGENT_CONF_PRIVOXY_NAME
@@ -312,17 +312,17 @@ func InstallPrivoxy() {
     let fileMgr = FileManager.default
     let homeDir = NSHomeDirectory()
     let appSupportDir = homeDir+APP_SUPPORT_DIR
-    if !fileMgr.fileExists(atPath: appSupportDir + "privoxy-\(PRIVOXY_VERSION)/privoxy") {
-        let bundle = Bundle.main
-        let installerPath = bundle.path(forResource: "install_privoxy.sh", ofType: nil)
-        let task = Process.launchedProcess(launchPath: installerPath!, arguments: [""])
-        task.waitUntilExit()
-        if task.terminationStatus == 0 {
-            NSLog("Install privoxy succeeded.")
-        } else {
-            NSLog("Install privoxy failed.")
-        }
-    }
+//    if !fileMgr.fileExists(atPath: appSupportDir + "privoxy-\(PRIVOXY_VERSION)/privoxy") {
+//        let bundle = Bundle.main
+//        let installerPath = bundle.path(forResource: "install_privoxy.sh", ofType: nil)
+//        let task = Process.launchedProcess(launchPath: installerPath!, arguments: [""])
+//        task.waitUntilExit()
+//        if task.terminationStatus == 0 {
+//            NSLog("Install privoxy succeeded.")
+//        } else {
+//            NSLog("Install privoxy failed.")
+//        }
+//    }
     
     let userConfigDir = homeDir + USER_CONFIG_DIR
     // Make dir: '~/.ShadowsocksX-NG'

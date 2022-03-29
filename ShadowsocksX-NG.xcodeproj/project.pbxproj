@@ -578,18 +578,18 @@
 				TargetAttributes = {
 					9B0BFFE41D0460A70040E62B = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = J6PK5KHJJ2;
+						DevelopmentTeam = BX9M3CVC45;
 						LastSwiftMigration = 1250;
 						ProvisioningStyle = Automatic;
 					};
 					9B3FFF431D09CD3B0019A709 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = J6PK5KHJJ2;
+						DevelopmentTeam = BX9M3CVC45;
 						ProvisioningStyle = Automatic;
 					};
 					9B5DD7AC2683A354005EFEF7 = {
 						CreatedOnToolsVersion = 12.5.1;
-						DevelopmentTeam = J6PK5KHJJ2;
+						DevelopmentTeam = BX9M3CVC45;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 9B0BFFE41D0460A70040E62B;
 					};
@@ -981,7 +981,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -1034,7 +1034,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -1051,8 +1051,8 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = J6PK5KHJJ2;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = BX9M3CVC45;
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1067,7 +1067,7 @@
 					"$(PROJECT_DIR)/ShadowsocksX-NG",
 					"$(PROJECT_DIR)/ShadowsocksX-NG/simple-obfs",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
 				MARKETING_VERSION = 1.9.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.exgphe.ShadowsocksX-NG";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1088,8 +1088,8 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = J6PK5KHJJ2;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = BX9M3CVC45;
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1104,7 +1104,7 @@
 					"$(PROJECT_DIR)/ShadowsocksX-NG",
 					"$(PROJECT_DIR)/ShadowsocksX-NG/simple-obfs",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
 				MARKETING_VERSION = 1.9.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.exgphe.ShadowsocksX-NG";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1121,7 +1121,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J6PK5KHJJ2;
+				DEVELOPMENT_TEAM = BX9M3CVC45;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1135,7 +1135,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J6PK5KHJJ2;
+				DEVELOPMENT_TEAM = BX9M3CVC45;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1157,7 +1157,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = J6PK5KHJJ2;
+				DEVELOPMENT_TEAM = BX9M3CVC45;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "ShadowsocksX-NGTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -1187,7 +1187,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = J6PK5KHJJ2;
+				DEVELOPMENT_TEAM = BX9M3CVC45;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "ShadowsocksX-NGTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
